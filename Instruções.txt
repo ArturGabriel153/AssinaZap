@@ -1,0 +1,72 @@
+==============================================
+  AssinaZap — Assinatura automática no WhatsApp
+==============================================
+
+O QUE FAZ
+---------
+Quando você envia uma mensagem no app do WhatsApp (instalado no PC),
+seu nome/assinatura é digitado automaticamente em cima dela, com a
+formatação que você escolher: negrito, itálico, caixa alta e quebra
+de linha. Igual ao ZapMe.
+
+
+COMO INSTALAR (1 vez só)
+------------------------
+1) Baixe e instale o AutoHotkey v2 (grátis, oficial):
+   https://www.autohotkey.com/   -> botão "Download" -> "v2"
+
+2) Dê dois cliques no arquivo "AssinaZap.ahk".
+   Vai aparecer um ícone verde "H" na bandeja (perto do relógio).
+
+3) Na primeira vez abre a tela de configuração. Digite seu nome,
+   marque as opções e clique em "Salvar".
+
+
+COMO USAR
+---------
+- Abra o WhatsApp, escreva sua mensagem e aperte Enter normalmente.
+- O nome aparece em cima e a mensagem é enviada.
+- Para mandar uma quebra de linha SEM enviar, use Shift+Enter (normal).
+
+Menu da bandeja (clique direito no ícone verde "H"):
+- Configurar AssinaZap ... abre as opções
+- Ativar / Desativar ...... liga/desliga sem fechar o programa
+- Sair .................... encerra
+
+
+INICIAR JUNTO COM O WINDOWS (opcional)
+--------------------------------------
+1) Aperte  Win + R  e digite:  shell:startup   (Enter)
+2) Cole um ATALHO do "AssinaZap.ahk" nessa pasta.
+   (clique direito no arquivo -> "Copiar" -> dentro da pasta:
+    clique direito -> "Colar atalho")
+
+
+LIMITAÇÕES (importante, sendo honesto)
+--------------------------------------
+- Funciona no app nativo do WhatsApp (processo WhatsApp.Root.exe, que é
+  o caso da versão atual baixada do site/Store). O script também cobre
+  WhatsApp.exe (versões antigas). Se um dia não funcionar, a Meta pode
+  ter mudado o nome do processo: abra o WhatsApp, clique com o direito
+  no ícone "H" da bandeja -> "Window Spy", veja o "ahk_exe" e me avise.
+
+- A assinatura entra ao apertar Enter DENTRO da janela do WhatsApp.
+  Em situações raras (ex.: apertar Enter na CAIXA DE BUSCA com texto
+  digitado) o comportamento pode não ser o ideal. No campo de mensagem
+  funciona normal.
+
+- O programa lê momentaneamente sua mensagem para não enviar a
+  assinatura sozinha em caixa vazia. Nada sai do seu computador:
+  não há internet, nuvem ou envio de dados. Sua área de transferência
+  (Ctrl+C) é restaurada automaticamente após cada envio.
+
+- O Windows Defender / antivírus pode estranhar scripts AutoHotkey
+  (é comum com qualquer automação de teclado). O código é aberto:
+  você pode ler tudo no arquivo AssinaZap.ahk.
+
+
+ARQUIVOS
+--------
+- AssinaZap.ahk .... o programa
+- config.ini ....... suas configurações (criado ao salvar)
+- Instruções.txt ... este guia
